@@ -28,6 +28,7 @@ st_options(
   descr.stats = "all",
   descr.transpose = FALSE,
   descr.silent = FALSE,
+  devtype = NULL,
   dfSummary.style = "multiline",
   dfSummary.varnumbers = TRUE,
   dfSummary.labels.col = TRUE,
@@ -129,6 +130,8 @@ whole data frame as main argument. Defaults to \code{25}.}
 of \code{\link{descr}}. \code{FALSE} by default.}
 
 \item{descr.silent}{Logical. Hide console messages. \code{FALSE} by default.}
+
+\item{devtype}{Character. Name of device type to use.}
 
 \item{dfSummary.style}{Character. \dQuote{multiline} by default. Set to 
 \dQuote{grid} for \emph{R Markdown} documents.}

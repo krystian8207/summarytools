@@ -64,6 +64,7 @@
 #' @param descr.transpose Logical. Corresponds to the \code{transpose} parameter
 #'   of \code{\link{descr}}. \code{FALSE} by default.
 #' @param descr.silent Logical. Hide console messages. \code{FALSE} by default.
+#' @param devtype Character. Name of device type to use. 
 #' @param dfSummary.style Character. \dQuote{multiline} by default. Set to 
 #'   \dQuote{grid} for \emph{R Markdown} documents.
 #' @param dfSummary.varnumbers Logical. In \code{\link{dfSummary}}, display
@@ -205,6 +206,7 @@ st_options <- function(option                 = NULL,
                        descr.stats            = "all",
                        descr.transpose        = FALSE,
                        descr.silent           = FALSE,
+                       devtype                = NULL,
                        dfSummary.style        = "multiline",
                        dfSummary.varnumbers   = TRUE,
                        dfSummary.labels.col   = TRUE,

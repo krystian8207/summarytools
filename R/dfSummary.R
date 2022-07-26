@@ -1348,6 +1348,10 @@ encode_graph <- function(data, graph_type, graph.magnif = 1,
                     Windows = "windows",
                     Linux   = "Xlib",
                     Darwin  = "quartz")
+  
+  if (!is.null(st_options("devtype"))) {
+    devtype <- st_options("devtype")
+  }
 
   if (graph_type == "histogram") {
     rc <- try(png(png_loc <- tempfile(fileext = ".png"),
